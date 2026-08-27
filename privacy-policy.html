@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Crosstown Connect</title>
+<style>
+  :root{
+    --ink:#20221f;
+    --ink-soft:#4b4d47;
+    --paper:#faf8f3;
+    --paper-raised:#ffffff;
+    --rule:#dcd6c8;
+    --rust:#b5471b;
+    --rust-soft:#e8dccf;
+    --focus:#1d5fae;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Iowan Old Style","Georgia","Times New Roman",serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--rust);}
+  a:focus-visible, button:focus-visible{outline:3px solid var(--focus); outline-offset:2px;}
+
+  .masthead{
+    border-bottom:1px solid var(--rule);
+    padding:56px 24px 40px;
+    text-align:center;
+  }
+  .masthead .mark{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:52px;height:52px;
+    border-radius:50%;
+    background:var(--rust);
+    color:#fff;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-weight:700;
+    font-size:20px;
+    margin-bottom:18px;
+    letter-spacing:0.5px;
+  }
+  .masthead h1{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-weight:800;
+    font-size:clamp(28px,4vw,40px);
+    letter-spacing:-0.01em;
+    margin:0 0 8px;
+  }
+  .masthead .org{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--rust);
+    font-weight:700;
+    margin:0 0 18px;
+  }
+  .masthead .meta{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+
+  .layout{
+    max-width:1080px;
+    margin:0 auto;
+    padding:48px 24px 100px;
+    display:grid;
+    grid-template-columns:230px minmax(0,680px);
+    gap:56px;
+    justify-content:center;
+  }
+  @media (max-width:820px){
+    .layout{grid-template-columns:1fr; padding:32px 20px 72px;}
+    nav.toc{display:none;}
+  }
+
+  nav.toc{
+    position:sticky;
+    top:32px;
+    align-self:start;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+  }
+  nav.toc .toc-label{
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:700;
+    margin-bottom:14px;
+  }
+  nav.toc ol{
+    list-style:none;
+    margin:0;
+    padding:0;
+    border-left:2px solid var(--rule);
+  }
+  nav.toc li{margin:0;}
+  nav.toc a{
+    display:block;
+    padding:7px 0 7px 16px;
+    margin-left:-2px;
+    border-left:2px solid transparent;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    line-height:1.35;
+  }
+  nav.toc a:hover{color:var(--rust); border-left-color:var(--rust);}
+
+  main{min-width:0;}
+
+  .callout{
+    background:var(--rust-soft);
+    border:1px solid #d8c3ad;
+    border-radius:4px;
+    padding:20px 22px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:14.5px;
+    color:#5a3418;
+    margin:0 0 44px;
+    line-height:1.55;
+  }
+  .callout strong{color:var(--rust);}
+
+  section{
+    padding-top:8px;
+    margin-bottom:44px;
+    scroll-margin-top:24px;
+  }
+  section h2{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:12px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--rust);
+    font-weight:700;
+    margin:0 0 4px;
+  }
+  section h3.title{
+    font-size:23px;
+    margin:0 0 18px;
+    font-weight:600;
+  }
+  section p{margin:0 0 14px; color:var(--ink);}
+  section ul{margin:0 0 14px; padding-left:22px;}
+  section li{margin-bottom:8px;}
+
+  .datacard{
+    border:1px solid var(--rule);
+    border-radius:6px;
+    background:var(--paper-raised);
+    padding:18px 20px;
+    margin-bottom:14px;
+  }
+  .datacard .dt{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-weight:700;
+    font-size:14px;
+    color:var(--ink);
+    margin-bottom:4px;
+  }
+  .datacard .dd{
+    font-size:15px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 14px;
+    font-size:15px;
+  }
+  th,td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--rule);
+    vertical-align:top;
+  }
+  th{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:11.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:700;
+  }
+
+  hr.rule{
+    border:none;
+    border-top:1px solid var(--rule);
+    margin:48px 0;
+  }
+
+  footer{
+    text-align:center;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    padding:32px 24px 60px;
+    border-top:1px solid var(--rule);
+  }
+
+  .backtop{
+    display:inline-block;
+    margin-top:8px;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+  }
+  .backtop:hover{color:var(--rust);}
+</style>
+</head>
+<body>
+
+<header class="masthead" id="top">
+  <div class="mark">CC</div>
+  <div class="org">Crosstown Younglife</div>
+  <h1>Crosstown Connect — Privacy Policy</h1>
+  <div class="meta">Effective August 26, 2026 &nbsp;·&nbsp; Contact: <a href="mailto:cycrosstown@gmail.com">cycrosstown@gmail.com</a></div>
+</header>
+
+<div class="layout">
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#who-can-use">2. Who can use this app</a></li>
+      <li><a href="#collect">3. Information we collect</a></li>
+      <li><a href="#use">4. How we use it</a></li>
+      <li><a href="#share">5. Who we share it with</a></li>
+      <li><a href="#retention">6. Retention &amp; deletion</a></li>
+      <li><a href="#children">7. Children's privacy</a></li>
+      <li><a href="#security">8. Security</a></li>
+      <li><a href="#rights">9. Your choices &amp; rights</a></li>
+      <li><a href="#changes">10. Changes to this policy</a></li>
+      <li><a href="#contact">11. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="callout">
+      <strong>In short:</strong> Crosstown Connect is an internal coordination app for Crosstown Younglife leaders and volunteers — used to share event details, prayer requests, and messages with each other. It is not intended for use by students or anyone under 18. We only collect what's needed to run those features, we don't sell your data, and you can ask us to delete your account or content at any time.
+    </div>
+
+    <section id="overview">
+      <h2>Section 1</h2>
+      <h3 class="title">Overview</h3>
+      <p>This Privacy Policy explains how Crosstown Younglife ("we," "us," "our") collects, uses, and protects information through the Crosstown Connect mobile app (the "App"). By creating an account or using the App, you agree to the practices described here.</p>
+      <p>Crosstown Connect exists to serve as a hub for Crosstown Younglife leaders: staying in the know on events, coordinating logistics, sharing prayer requests, and communicating with fellow leaders.</p>
+    </section>
+
+    <section id="who-can-use">
+      <h2>Section 2</h2>
+      <h3 class="title">Who can use this app</h3>
+      <p>Crosstown Connect is built for adult Crosstown Younglife leaders and volunteers. It is not directed at, marketed to, or intended for use by minors, including the students served by our ministry. Access is limited to individuals we invite as leaders or staff.</p>
+    </section>
+
+    <section id="collect">
+      <h2>Section 3</h2>
+      <h3 class="title">Information we collect</h3>
+      <p>We collect only what's needed to run the App's features:</p>
+
+      <div class="datacard">
+        <div class="dt">Account information</div>
+        <p class="dd">Your name and email address, used to create your login and identify you to other leaders in the App.</p>
+      </div>
+
+      <div class="datacard">
+        <div class="dt">Messages &amp; leader communications</div>
+        <p class="dd">Content you send through the App's messaging features, so it can be delivered to and stored for other leaders in the conversation.</p>
+      </div>
+
+      <div class="datacard">
+        <div class="dt">Prayer requests</div>
+        <p class="dd">The content of prayer requests you choose to submit. We treat this as sensitive information — see <a href="#retention">Retention &amp; Deletion</a> for how it's handled.</p>
+      </div>
+
+      <div class="datacard">
+        <div class="dt">Event &amp; coordination content</div>
+        <p class="dd">Event details, RSVPs, or coordination notes you or other leaders enter into the App.</p>
+      </div>
+
+      <div class="datacard">
+        <div class="dt">Push notification token</div>
+        <p class="dd">A device identifier issued by Apple that lets us deliver notifications (like new prayer requests or event updates) to your device. This token isn't tied to your identity beyond your own account.</p>
+      </div>
+
+      <div class="datacard">
+        <div class="dt">Basic technical data</div>
+        <p class="dd">Standard diagnostic information (like app version and crash logs) automatically generated by our app platform to keep the App running reliably.</p>
+      </div>
+
+      <p>We do <strong>not</strong> collect your location, contacts, photos, or browsing activity outside the App.</p>
+    </section>
+
+    <section id="use">
+      <h2>Section 4</h2>
+      <h3 class="title">How we use it</h3>
+      <ul>
+        <li>To create and maintain your leader account</li>
+        <li>To deliver messages, prayer requests, and event information between leaders</li>
+        <li>To send push notifications you'd expect from the App (new messages, prayer requests, event changes)</li>
+        <li>To keep the App secure and working properly</li>
+      </ul>
+      <p>We do not use your information for advertising, and we do not build marketing profiles from it.</p>
+    </section>
+
+    <section id="share">
+      <h2>Section 5</h2>
+      <h3 class="title">Who we share it with</h3>
+      <p>We don't sell your information. It's shared only with the service providers that make the App work, and with other leaders inside the App itself:</p>
+      <table>
+        <thead>
+          <tr><th>Who</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Other Crosstown Younglife leaders</td><td>Messages, prayer requests, and event content are visible to other leaders in the App by design.</td></tr>
+          <tr><td>Base44</td><td>Our app development and backend hosting platform. Base44 stores App data on our behalf and does not use it for its own purposes.</td></tr>
+          <tr><td>Apple, Inc.</td><td>Delivers push notifications and handles App Store distribution.</td></tr>
+        </tbody>
+      </table>
+      <p>We may also disclose information if required by law, or to protect the safety of our leaders and community.</p>
+    </section>
+
+    <section id="retention">
+      <h2>Section 6</h2>
+      <h3 class="title">Retention &amp; deletion</h3>
+      <ul>
+        <li>Leaders can delete individual messages or content they've posted directly within the App at any time.</li>
+        <li>Staff administrators can remove unwanted or outdated content, including prayer requests, as part of routine upkeep.</li>
+        <li>If you'd like your account and associated data fully deleted, email <a href="mailto:cycrosstown@gmail.com">cycrosstown@gmail.com</a> and we'll process the request within a reasonable time.</li>
+        <li>We aim to keep data only as long as it's useful for its purpose — we periodically clear out old or resolved prayer requests rather than keeping them indefinitely.</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>Section 7</h2>
+      <h3 class="title">Children's privacy</h3>
+      <p>Crosstown Connect is intended solely for adult leaders and volunteers. We do not knowingly collect information from anyone under 18. If we become aware that a minor has created an account, we will delete the associated information promptly. If you believe a minor has accessed the App, please contact us at <a href="mailto:cycrosstown@gmail.com">cycrosstown@gmail.com</a>.</p>
+    </section>
+
+    <section id="security">
+      <h2>Section 8</h2>
+      <h3 class="title">Security</h3>
+      <p>We use reasonable technical and administrative safeguards, including those provided by our platform Base44, to protect information from unauthorized access, loss, or misuse. No system is perfectly secure, but we work to keep leader and ministry information protected.</p>
+    </section>
+
+    <section id="rights">
+      <h2>Section 9</h2>
+      <h3 class="title">Your choices &amp; rights</h3>
+      <ul>
+        <li><strong>Access or correct</strong> your account information by contacting us or updating it in the App.</li>
+        <li><strong>Delete</strong> content you've posted, or request full account deletion.</li>
+        <li><strong>Opt out</strong> of push notifications at any time through your device's iOS Settings.</li>
+      </ul>
+      <p>To exercise any of these, email <a href="mailto:cycrosstown@gmail.com">cycrosstown@gmail.com</a>.</p>
+    </section>
+
+    <section id="changes">
+      <h2>Section 10</h2>
+      <h3 class="title">Changes to this policy</h3>
+      <p>If we make material changes to this policy, we'll update the effective date above and notify leaders through the App or by email.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Section 11</h2>
+      <h3 class="title">Contact us</h3>
+      <p>Questions about this policy or how your information is handled? Reach out to:</p>
+      <p><strong>Crosstown Younglife</strong><br>
+      Email: <a href="mailto:cycrosstown@gmail.com">cycrosstown@gmail.com</a></p>
+      <a class="backtop" href="#top">↑ Back to top</a>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  © 2026 Crosstown Younglife. This policy applies only to the Crosstown Connect app.
+</footer>
+
+</body>
+</html>
